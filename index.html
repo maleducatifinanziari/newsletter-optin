@@ -364,6 +364,66 @@
     }
 
     /* ============================================================
+       CHI SIAMO
+       ============================================================ */
+    .mf-chisiamo {
+      background:
+        radial-gradient(ellipse at 85% 20%, rgba(84, 162, 210, 0.12) 0%, transparent 50%),
+        var(--mf-light);
+      padding: 72px 24px;
+    }
+    .mf-chisiamo-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 64px;
+      align-items: center;
+    }
+    .mf-chisiamo-copy h2 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 700;
+      color: var(--mf-navy);
+      margin-bottom: 24px;
+    }
+    .mf-chisiamo-copy p {
+      font-family: var(--mf-font-body);
+      font-size: 16px;
+      color: var(--mf-navy);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .mf-chisiamo-copy p:last-of-type { margin-bottom: 24px; }
+    .mf-chisiamo-copy em { font-style: italic; }
+    .mf-chisiamo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--mf-navy);
+      color: var(--mf-light);
+      font-family: var(--mf-font-body);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 100px;
+    }
+    .mf-chisiamo-foto img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+      box-shadow: 0 12px 40px rgba(0, 58, 100, 0.15);
+    }
+    @media (max-width: 860px) {
+      .mf-chisiamo-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .mf-chisiamo-foto { max-width: 400px; margin: 0 auto; width: 100%; }
+      .mf-chisiamo { padding: 56px 24px; }
+    }
+
+    /* ============================================================
        FOOTER
        ============================================================ */
     .mf-footer {
@@ -526,6 +586,27 @@
           <p class="mf-testi-text">Grazie a voi faccio scelte più consapevoli e ho detto dei no, quando non potevo permettermi di fare certe cose, anziché sentirmi in costante affanno. Il vostro lavoro è molto importante.</p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHI SIAMO
+       ============================================================ -->
+  <section class="mf-chisiamo">
+    <div class="mf-chisiamo-inner">
+      <div class="mf-chisiamo-copy">
+        <h2>Chi siamo</h2>
+        <p>Siamo Dora e Davide, educatori finanziari AIEF e autori del libro <em>"Maleducati Finanziari"</em>.</p>
+        <img src="foto-libro.jpg" alt="Libro Maleducati Finanziari" style="width:140px;border-radius:8px;margin:16px auto;display:block;">
+        <p>Dieci anni fa eravamo dei veri maleducati finanziari e non avevamo un metodo per gestire i nostri soldi.</p>
+        <p>Abbiamo studiato, sperimentato, sbagliato. E alla fine costruito un sistema che funziona davvero nella vita reale.</p>
+        <p>Poi abbiamo deciso di diventare educatori finanziari per insegnarlo a chi ne aveva bisogno, perché purtroppo in Italia nessuno insegna educazione finanziaria davvero.</p>
+        <p>Nelle nostre mail della domenica trovi riflessioni, consigli e punti di vista unici sulla gestione del denaro e sul rapporto che ogni persona ha con i soldi.</p>
+        <div class="mf-chisiamo-badge">&#9734; Educatori Finanziari Certificati AIEF</div>
+      </div>
+      <div class="mf-chisiamo-foto">
+        <img src="foto-dora-davide.jpg" alt="Dora e Davide — Maleducati Finanziari">
       </div>
     </div>
   </section>
