@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- MailerLite fonts -->
-  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1773240");</style>
+  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1775464");</style>
 
   <style>
     /* ============================================================
@@ -649,9 +649,11 @@
 
   <script>
     function ml_webform_success_17269980() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-17269980 .row-success').show();
-      $('.ml-subscribe-form-17269980 .row-form').hide();
+      try {
+        window.top.location.href = 'https://mailsettimanale.maleducatifinanziari.com/thank-you.html';
+      } catch (e) {
+        window.location.href = 'https://mailsettimanale.maleducatifinanziari.com/thank-you.html';
+      }
     }
   </script>
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
