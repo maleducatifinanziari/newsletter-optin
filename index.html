@@ -43,6 +43,7 @@
 
     :root {
       --mf-navy:       #003a64;
+      --mf-yellow:     #f5c518;
       --mf-blue:       #54a2d2;
       --mf-light:      #a9cee8;
       --mf-white:      #ffffff;
@@ -68,10 +69,7 @@
        ============================================================ */
     .mf-hero {
       flex: 1;
-      background:
-        radial-gradient(ellipse at 10% 20%, rgba(84, 162, 210, 0.18) 0%, transparent 55%),
-        radial-gradient(ellipse at 90% 85%, rgba(84, 162, 210, 0.08) 0%, transparent 50%),
-        var(--mf-navy);
+      background: var(--mf-white);
       display: flex;
       align-items: center;
       padding: 60px 24px;
@@ -93,7 +91,7 @@
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: var(--mf-white);
+      color: var(--mf-navy);
       margin-bottom: 20px;
       display: block;
     }
@@ -102,21 +100,22 @@
       font-family: var(--mf-font-title);
       font-size: clamp(38px, 5.5vw, 68px);
       font-weight: 700;
-      color: var(--mf-white);
+      color: var(--mf-navy);
       line-height: 1.06;
       letter-spacing: -0.5px;
       margin-bottom: 24px;
+      text-transform: uppercase;
     }
 
     .mf-hero h1 em {
       font-style: normal;
-      color: var(--mf-white);
+      color: var(--mf-navy);
     }
 
     .mf-hero-subtitle {
       font-family: var(--mf-font-body);
       font-size: 19px;
-      color: var(--mf-light);
+      color: var(--mf-navy);
       line-height: 1.65;
       margin-bottom: 16px;
       max-width: 480px;
@@ -125,7 +124,7 @@
     .mf-hero-detail {
       font-family: var(--mf-font-body);
       font-size: 16px;
-      color: rgba(169, 206, 232, 0.7);
+      color: var(--mf-navy);
       line-height: 1.65;
       max-width: 440px;
       margin-bottom: 36px;
@@ -135,7 +134,7 @@
       font-family: var(--mf-font-body);
       font-size: 13px;
       font-weight: 700;
-      color: var(--mf-light);
+      color: var(--mf-navy);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin-bottom: 14px;
@@ -151,7 +150,7 @@
     .mf-benefit-list li {
       font-family: var(--mf-font-body);
       font-size: 15px;
-      color: rgba(169, 206, 232, 0.85);
+      color: var(--mf-navy);
       padding-left: 24px;
       position: relative;
       line-height: 1.5;
@@ -160,7 +159,7 @@
       content: '✓';
       position: absolute;
       left: 0;
-      color: var(--mf-blue);
+      color: var(--mf-navy);
       font-weight: 700;
     }
 
@@ -168,7 +167,7 @@
        CARD FORM
        ============================================================ */
     .mf-form-card {
-      background: var(--mf-white);
+      background: var(--mf-navy);
       border-radius: 20px;
       padding: 40px 36px;
       box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
@@ -178,7 +177,7 @@
       font-family: var(--mf-font-title);
       font-size: 26px;
       font-weight: 700;
-      color: var(--mf-navy);
+      color: var(--mf-white);
       line-height: 1.15;
       margin-bottom: 8px;
       text-align: center;
@@ -187,7 +186,7 @@
     .mf-form-card-sub {
       font-family: var(--mf-font-body);
       font-size: 14px;
-      color: #5a7a90;
+      color: var(--mf-light);
       text-align: center;
       margin-bottom: 28px;
       line-height: 1.5;
@@ -231,9 +230,9 @@
       margin: 0 0 16px 0; width: 100%;
     }
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
-      background-color: #f4f8fb !important;
+      background-color: var(--mf-white) !important;
       color: var(--mf-navy) !important;
-      border-color: var(--mf-light) !important;
+      border-color: rgba(169, 206, 232, 0.4) !important;
       border-radius: 8px !important;
       border-width: 1px !important;
       font-family: var(--mf-font-body) !important;
@@ -274,7 +273,7 @@
     }
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description,
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description p {
-      color: #6b8296 !important;
+      color: rgba(169, 206, 232, 0.8) !important;
       font-family: var(--mf-font-body) !important;
       font-size: 11px !important;
       line-height: 1.55 !important;
@@ -286,7 +285,8 @@
       margin: 0; float: left; width: 100%;
     }
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-      background-color: var(--mf-blue) !important;
+      background-color: var(--mf-yellow) !important;
+      color: var(--mf-navy) !important;
       border-radius: 8px !important;
       font-family: var(--mf-font-body) !important;
       font-size: 16px !important;
@@ -297,7 +297,7 @@
       transition: background 0.3s ease, transform 0.3s ease !important;
     }
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-      background-color: #3d8ab8 !important;
+      background-color: #e6b800 !important;
       transform: scale(1.02);
     }
     #mlb2-17269980.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
@@ -327,9 +327,7 @@
        TESTIMONIANZE
        ============================================================ */
     .mf-testimonianze {
-      background:
-        radial-gradient(ellipse at 85% 20%, rgba(84, 162, 210, 0.1) 0%, transparent 50%),
-        var(--mf-light);
+      background: var(--mf-white);
       padding: 72px 24px;
     }
     .mf-testimonianze-inner {
@@ -351,9 +349,10 @@
     }
     .mf-testi-card {
       background: var(--mf-white);
+      border: 1px solid rgba(0, 58, 100, 0.15);
       border-radius: 16px;
       padding: 28px 24px;
-      box-shadow: 0 2px 16px rgba(0, 58, 100, 0.08);
+      box-shadow: 0 2px 16px rgba(0, 58, 100, 0.06);
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -384,9 +383,7 @@
        CHI SIAMO
        ============================================================ */
     .mf-chisiamo {
-      background:
-        radial-gradient(ellipse at 85% 20%, rgba(84, 162, 210, 0.12) 0%, transparent 50%),
-        var(--mf-light);
+      background: var(--mf-navy);
       padding: 72px 24px;
     }
     .mf-chisiamo-inner {
@@ -401,13 +398,13 @@
       font-family: var(--mf-font-title);
       font-size: clamp(28px, 3.5vw, 44px);
       font-weight: 700;
-      color: var(--mf-navy);
+      color: var(--mf-yellow);
       margin-bottom: 24px;
     }
     .mf-chisiamo-copy p {
       font-family: var(--mf-font-body);
       font-size: 16px;
-      color: var(--mf-navy);
+      color: var(--mf-white);
       line-height: 1.75;
       margin-bottom: 16px;
     }
@@ -417,8 +414,8 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--mf-navy);
-      color: var(--mf-light);
+      background: var(--mf-yellow);
+      color: var(--mf-navy);
       font-family: var(--mf-font-body);
       font-size: 13px;
       font-weight: 600;
